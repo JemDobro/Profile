@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://jemadean-dobrosielski.netlify.com/* http://www.jemadean.com/:splat 301!
