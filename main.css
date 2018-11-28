@@ -85,6 +85,10 @@ section {
   background-color: rgb(46, 49, 63);
 }
 
+.img-container-project {
+  background-color: white;
+}
+
 .profile-pic {
   height: 150px;
   margin: 5px;
@@ -103,7 +107,7 @@ section {
 }
 
 article {
-  border-bottom: 2px solid rgb(46, 49, 63);
+  border: 2px solid rgb(46, 49, 63);
   padding-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
@@ -161,12 +165,6 @@ footer {
   }
   aside {
     padding: 50px;
-  }
-  .img-container-project {
-    background-color: white;
-  }
-  article {
-    border: 2px solid rgb(46, 49, 63);
   }
 }
 
