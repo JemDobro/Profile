@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Assistant', sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+
+nav {
+  width: 100%;
+  height: 40px;
+  padding: 2px 10px;
+  background-color: rgb(49, 53, 49);
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 3px solid rgba(49, 158, 85);
+}
+
+.full-nav-ul {
+  display: flex;
+  flex-direction: row;
+}
+
+li, .hamburger-menu {
+  list-style: none;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.menu {
+  background-color: rgb(49, 53, 49);
+  position: fixed;
+  top: 40px;
+  width: 100%;
+}
+
+.menu-nav-ul {
+  padding: 0;
+}
+
+.menu-nav-li {
+  width: 100%;
+  border-bottom: 1px solid rgba(49, 158, 85);
+}
+
+nav p {
+  padding: 10px;
+}
+
+header {
+  text-align: left;
+  background-color: rgb(49, 53, 49);
+  background-image: url("https://res.cloudinary.com/cozyspaces/image/upload/v1544322837/profile-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  border-bottom: 3px solid rgba(49, 158, 85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh);
+  align-self: flex-start;
+}
+
+.header-text {
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(49, 53, 49, 0.55);
+  text-align: center;
+  font-weight: 600;
+}
+
+.email {
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a {
+  color:white;
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(49, 158, 85);
+}
+
+main {
+  color: rgb(3, 3, 3);
+}
+
+section {
+  flex: 1;
+  padding: 60px 20px;
+  overflow: auto;
+  border-bottom: 3px solid rgba(49, 158, 85);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 40px;
+  min-height: calc(100vh);
+}
+
+.profile-intro {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+
+.profile-pic {
+  height: 200px;
+  border-radius: 50%;
+  border:2px solid rgb(49, 53, 49);
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  justify-content: center;
+  align-content: center;
+  padding-left: 15px;
+}
+
+.projects {
+  text-align: center;
+  background-color: rgb(49, 53, 49);
+  color: white;
+  background-image: url("https://res.cloudinary.com/cozyspaces/image/upload/c_crop,e_brightness:-31,g_north,h_1685,w_3257/v1544322837/profile-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.projects-section {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.project-card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.img-container-project {
+  justify-content: center;
+  align-content: center;
+}
+
+article {
+  border: 2px solid rgb(49, 53, 49);
+  border-radius: 2px;
+  background-color: rgb(49, 53, 49);
+  color: white;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 10px;
+}
+
+h2 {
+  padding: 5px 0px;
+}
+
+/* .projects {
+  text-align: center;
+  background-color: rgb(49, 53, 49);
+  color: white;
+  background-image: url("https://res.cloudinary.com/cozyspaces/image/upload/c_crop,e_brightness:-31,g_north,h_1685,w_3257/v1544322837/profile-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+.section-header {
+  text-align: center;
+  padding-bottom: 15px;
+  font-weight: 200;
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  max-width: 400px;
+  margin: 10px auto;
+  border: 2px solid rgb(49, 53, 49);
+  border-radius: 2px;
+}
+
+.card-text {
+  padding: 5px 0px 18px;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  flex: 1 1 100%;
+  margin: 10px 0;
+} 
+
+.view-link {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px;
+  padding: 3px 10px;
+  border:2px outset buttonface;
+  border-radius: 3px;
+  background-color: white;
+  color: rgb(49, 53, 49);
+  width: 30%;
+  min-width: 134px;  
+  height: 40px;
+  align-self: flex-end;
+}
+
+a.view-link:hover {
+  color:  rgba(49, 158, 85);
+  background-color: rgb(49, 53, 49);
+}
+
+footer{
+  text-align: center;
+  padding: 60px 20px 10px;
+  color: white;
+  background-color: rgb(49, 53, 49);
+  min-height: calc(100vh);
+}
+
+.contact {
+  border: 0px;
+}
+
+.contact-info {
+  margin: 10px;
+  border:1px solid rgb(49, 53, 49);;
+  border-radius: 50px;
+}
+
+.linked-in {
+  margin: 10px;
+  border:1px solid rgb(49, 53, 49);;
+  border-radius: 3px;
+}
+
+.contact-info:hover, .linked-in:hover {
+  background-color: rgba(49, 158, 85);
+}
+
+@media screen and (max-width: 1024px){
+  .projects-section {
+    flex-direction: column;
+  } 
+}
+
+@media screen and (max-width: 550px){
+  .hamburger-menu {
+    display: flex;
+  }
+  .full-nav-ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px){
+  .profile-intro {
+    flex-direction: column;
+  }
+  .about {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .card-img {
+    height: 250px;
+  }
+  .project-links {
+    flex-flow: row wrap;
+    justify-content: center;
+  } 
+}
