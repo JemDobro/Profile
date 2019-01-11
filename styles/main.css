@@ -18,8 +18,7 @@ nav {
 }
 
 .full-nav-ul {
-  display: flex;
-  flex-direction: row;
+  display: none;
 }
 
 li, .hamburger-menu {
@@ -31,7 +30,7 @@ li, .hamburger-menu {
 }
 
 .hamburger-menu {
-  display: none;
+  display: flex;
 }
 
 .menu {
@@ -107,12 +106,14 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   padding: 60px 40px;
   min-height: calc(100vh);
 }
 
 .profile-intro {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-top: 10px;
   padding-bottom: 15px;
@@ -145,7 +146,7 @@ section {
 
 .projects-section {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
 
 .project-card {
@@ -166,9 +167,7 @@ article {
   border-radius: 2px;
   background-color: rgb(49, 53, 49);
   color: white;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 30px;
   margin: 10px;
 }
 
@@ -185,7 +184,7 @@ h2 {
 .card-img {
   display: block;
   width: 100%;
-  height: 300px;
+  height: 250px;
   max-width: 400px;
   margin: 10px auto;
   border: 2px solid rgb(49, 53, 49);
@@ -198,8 +197,9 @@ h2 {
 
 .project-links {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-flow: row wrap;
+  justify-content: center;
+  min-height: 130px;
   width: 100%;
   flex: 1 1 100%;
   margin: 10px 0;
@@ -253,40 +253,43 @@ footer{
   background-color: rgba(49, 158, 85);
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 1024px){
   .projects-section {
-    flex-direction: column;
+    flex-flow: row wrap;
   } 
 }
 
-@media screen and (max-width: 550px){
+@media screen and (min-width: 550px){
   .hamburger-menu {
-    display: flex;
-  }
-  .full-nav-ul {
     display: none;
   }
+  .full-nav-ul {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
-@media screen and (max-width: 440px){
+@media screen and (min-width: 440px){
   .profile-intro {
-    flex-direction: column;
+    flex-direction: row;
   }
   .about {
-    text-align: center;
+    text-align: left;
   }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (min-width: 400px){  
   .card-img {
-    height: 250px;
+    height: 300px;
   }
   .project-links {
-    flex-flow: row wrap;
-    justify-content: center;
-    min-height: 130px;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 0;
   }
-  .project-card, .project-card-wide {
-    padding: 30px;
+  article {
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
