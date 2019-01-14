@@ -14,7 +14,8 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 3px solid rgba(49, 158, 85);
+  border-bottom: 3px solid ;
+  border-bottom-color: rgb(49, 158, 85)
 }
 
 .full-nav-ul {
@@ -47,7 +48,8 @@ li, .hamburger-menu {
 
 .menu-nav-li {
   width: 100%;
-  border-bottom: 1px solid rgba(49, 158, 85);
+  border-bottom: 1px solid;
+  border-bottom-color: #319e55;
 }
 
 nav p {
@@ -62,7 +64,8 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  border-bottom: 3px solid rgba(49, 158, 85);
+  border-bottom: 3px solid;
+  border-bottom-color: #319e55;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,9 +76,21 @@ header {
 .header-text {
   width: 100%;
   padding: 20px;
-  background-color: rgb(49, 53, 49, 0.55);
+  background-color: rgb(49, 53, 49, .85);
+  /* opacity: 0.85; */
   text-align: center;
   font-weight: 600;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.header-p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: auto;
 }
 
 .email {
@@ -89,7 +104,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: rgba(49, 158, 85);
+  color: rgb(49, 158, 85);
 }
 
 main {
@@ -100,7 +115,8 @@ section {
   flex: 1;
   padding: 60px 20px;
   overflow: auto;
-  border-bottom: 3px solid rgba(49, 158, 85);
+  border-bottom: 3px solid;
+  border-bottom-color: #319e55;
 }
 
 .about {
@@ -108,31 +124,46 @@ section {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 60px 40px;
-  min-height: calc(100vh);
+  border: 0px;
+  /* padding: 60px 40px; */
+  /* min-height: calc(100vh); */
 }
 
 .profile-intro {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   margin-top: 10px;
   padding-bottom: 15px;
 }
 
 .profile-pic {
-  height: 200px;
-  border-radius: 50%;
+  height: 300px;
+  width: auto;
+  border-radius: 5px;
   border:2px solid rgb(49, 53, 49);
+  margin: 0px 40px;
 }
 
 .profile-text {
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 100%;
+  flex: 1 1 66%;
   justify-content: center;
   align-content: center;
-  padding-left: 15px;
+  padding: 0px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.greeting {
+  font-size: 2.25em;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.profile-text-p {
+  font-size: 1.25em;
 }
 
 .projects {
@@ -143,6 +174,8 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-top: 3px solid;
+  border-top-color: #319e55;
 }
 
 .projects-section {
@@ -167,6 +200,7 @@ article {
   border: 2px solid rgb(49, 53, 49);
   border-radius: 2px;
   background-color: rgb(49, 53, 49);
+  opacity: .85;
   color: white;
   padding: 30px;
   margin: 10px;
@@ -179,7 +213,9 @@ h2 {
 .section-header {
   text-align: center;
   padding-bottom: 15px;
-  font-weight: 200;
+  font-size: 3em;
+  font-weight: bold;
+  width: 100%;
 }
 
 .card-img {
@@ -222,20 +258,19 @@ h2 {
 }
 
 a.view-link:hover {
-  color:  rgba(49, 158, 85);
+  color: #319e55;
   background-color: rgb(49, 53, 49);
 }
 
 footer{
   text-align: center;
-  padding: 60px 20px 10px;
   color: white;
   background-color: rgb(49, 53, 49);
-  min-height: calc(100vh);
 }
 
 .contact {
   border: 0px;
+  padding: 25px 20px;
 }
 
 .contact-info {
@@ -251,32 +286,7 @@ footer{
 }
 
 .contact-info:hover, .linked-in:hover {
-  background-color: rgba(49, 158, 85);
-}
-
-@media screen and (min-width: 1024px){
-  .projects-section {
-    flex-flow: row wrap;
-  } 
-}
-
-@media screen and (min-width: 550px){
-  .hamburger-menu {
-    display: none;
-  }
-  .full-nav-ul {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 440px){
-  .profile-intro {
-    flex-direction: row;
-  }
-  .about {
-    text-align: left;
-  }
+  background-color: #319e55;
 }
 
 @media screen and (min-width: 400px){  
@@ -294,3 +304,51 @@ footer{
     padding-right: 30px;
   }
 }
+
+@media screen and (min-width: 440px){
+  .profile-intro {
+    flex-direction: row;
+  }
+  .about {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 550px){
+  .hamburger-menu {
+    display: none;
+  }
+  .full-nav-ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 700px){
+  .profile-text {
+    padding: 0px 60px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .about {
+    flex-flow: row wrap;
+    padding: 60px 60px;
+    justify-content: center;
+    max-width: 1300px;
+    margin: auto;
+  }
+  .greeting {
+    text-align: left;
+  }
+  .projects-section {
+    flex-flow: row wrap;
+  }
+  .project-card-wide {
+    width: 100%;
+  }
+}
+
+
+
+
