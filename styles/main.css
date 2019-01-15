@@ -15,7 +15,8 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   border-bottom: 3px solid ;
-  border-bottom-color: rgb(49, 158, 85)
+  border-bottom-color: rgb(49, 158, 85);
+  z-index: 1;
 }
 
 .full-nav-ul {
