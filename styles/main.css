@@ -78,7 +78,7 @@ header {
 .header-text {
   width: 100%;
   padding: 20px;
-  background-color: rgb(49, 53, 49, .85);
+  background-color: rgba(49, 53, 49, .85);
   /* opacity: 0.85; */
   text-align: center;
   font-weight: 600;
@@ -201,8 +201,8 @@ section {
 article {
   border: 2px solid rgb(49, 53, 49);
   border-radius: 2px;
-  background-color: rgb(49, 53, 49);
-  opacity: .85;
+  background-color: rgba(49, 53, 49, .85);
+  /* opacity: .85; */
   color: white;
   padding: 30px;
   margin: 10px;
