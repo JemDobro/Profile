@@ -41,6 +41,7 @@ li, .hamburger-menu {
   position: fixed;
   top: 40px;
   width: 100%;
+  z-index: 1;
 }
 
 .menu-nav-ul {
